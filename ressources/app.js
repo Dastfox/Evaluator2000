@@ -156,14 +156,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			],
 		},
 		arts1: {
-			name: 'Musique',
+			name: 'arts',
 			objectives: [
 				{
-					category: 'Chanter',
+					category: 'Chanter:',
 					expectations: ['Expérimenter et explorer sa voix Reproduire un modèle Chanter et interpréter'],
 				},
 				{
-					category: 'Écouter et comparer',
+					category: 'Écouter et comparer:',
 					expectations: ['Décrire et comparer des éléments sonores'],
 				},
 				{
@@ -227,39 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
 						"Identifier ce qui est animal, végétal, minéral ou élaboré par des êtres vivants Développement d'animaux et de végétaux Cycle de vie des êtres vivants Régimes alimentaires de quelques animaux Quelques besoins vitaux des végétaux",
 						"Repérer les éléments permettant la réalisation d'un mouvement corporel Mesurer et observer la croissance de son corps (croissance, taille, masse, pointure) Modification de la dentition",
 						"Mettre en œuvre et apprécier quelques règles d'hygiène de vie : variété alimentaire, activités physiques, capacité à se relaxer et mise en relation de son âge et de ses habitudes quotidiennes de repos et de besoins en sommeil, soins quotidiens de propreté (dents, mains, corps) Catégories d'aliments, leur variété, leurs apports spécifiques des aliments → la notion d’équilibre alimentaire (sur un repas, sur la journée, sur la semaine)",
-					],
-				},
-			],
-		},
-		sport1: {
-			name: 'Education physique',
-			objectives: [
-				{
-					category: 'Produire une performance maximale, mesurée à une échéance donnée',
-					expectations: [
-						'Courir, sauter, lancer à des intensités et des durées variables dans des contextes adaptés',
-						'Savoir différencier : courir vite et longtemps / lancer loin ou précis / sauter haut et loin',
-						'Accepter de viser une performance mesurée et de se confronter aux autres',
-						'Remplir quelques rôles spécifiques',
-					],
-				},
-				{
-					category: 'Adapter ses déplacements à des environnements variés',
-					expectations: ["Se déplacer dans l'eau sur une 15aine de mètres sans appui et après un temps d'immersion", 'Réaliser un parcours en adaptant ses déplacements à un environnement inhabituel', 'Respecter les règles de sécurité'],
-				},
-				{
-					category: "S'exprimer devant les autres par une prestation artistique ou acrobatique",
-					expectations: [
-						"Mobiliser le pouvoir expressif du corps, en reproduisant une séquence simple d'actions apprise ou en présentant une action inventée",
-						"S'adapter au rythme, mémoriser des pas, des figures, des éléments et des enchaînements pour réaliser des actions individuelles et collectives",
-					],
-				},
-				{
-					category: 'Conduire et maîtriser un affrontement collectif ou interindividuel',
-					expectations: [
-						"S'engager dans un affrontement individuel ou collectif en respectant les règles du jeu",
-						'Contrôler son engagement moteur et affectif pour réussir des actions simples',
-						'Connaître le but du jeu / Reconnaître ses partenaires et ses adversaires',
 					],
 				},
 			],
@@ -529,8 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		if (!evaluation || evaluation.value === '') return 'Non évalué';
 		const score = parseInt(evaluation.value);
-		if (score >= 66.6) return 'Dépassés';
-		if (score >= 33.3) return 'Atteints';
+		if (score >= 50) return 'Atteints';
 		return 'Non atteints';
 	}
 
